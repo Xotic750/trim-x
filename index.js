@@ -1,6 +1,6 @@
 /**
  * @file This method removes whitespace from the left and right end of a string.
- * @version 2.0.0
+ * @version 2.0.1
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -9,7 +9,6 @@
 
 'use strict';
 
-var requireCoercibleToString = require('require-coercible-to-string-x');
 var trimLeft = require('trim-left-x');
 var trimRight = require('trim-right-x');
 
@@ -24,5 +23,5 @@ var trimRight = require('trim-right-x');
  * trim(' \t\na \t\n') === 'a'; // true
  */
 module.exports = function trim(string) {
-  return trimLeft(trimRight(requireCoercibleToString(string)));
+  return trimLeft(trimRight(string));
 };
