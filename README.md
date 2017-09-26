@@ -23,17 +23,17 @@
 ## trim-x
 This method removes whitespace from the left and right end of a string.
 
-**Version**: 1.0.4  
+**Version**: 2.0.0  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_trim-x--module.exports"></a>
 
-### `module.exports(string)` ⇒ <code>undefined</code> \| <code>string</code> ⏏
+### `module.exports(string)` ⇒ <code>string</code> ⏏
 This method removes whitespace from the left and right end of a string.
 
 **Kind**: Exported function  
-**Returns**: <code>undefined</code> \| <code>string</code> - The trimmed string.  
+**Returns**: <code>string</code> - The trimmed string.  
 
 | Param | Type | Description |
 | --- | --- | --- |

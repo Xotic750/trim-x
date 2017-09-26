@@ -21,7 +21,28 @@ if (typeof module === 'object' && module.exports) {
   trim = returnExports;
 }
 
+var hasSymbol = typeof Symbol === 'function' && typeof Symbol('') === 'symbol';
+var ifSymbolIt = hasSymbol ? it : xit;
+
 describe('trim', function () {
+  it('is a function', function () {
+    expect(typeof trim).toBe('function');
+  });
+
+  it('should throw when target is null or undefined', function () {
+    expect(function () {
+      trim();
+    }).toThrow();
+
+    expect(function () {
+      trim(void 0);
+    }).toThrow();
+
+    expect(function () {
+      trim(null);
+    }).toThrow();
+  });
+
   it('Basic tests', function () {
     expect(trim(' \t\na \t\n')).toBe('a', 'strips whitespace off both sides');
     expect(trim('a')).toBe('a', 'noop when no whitespace');
@@ -29,5 +50,38 @@ describe('trim', function () {
     expect(trim(allWhitespaceChars + 'a' + allWhitespaceChars)).toBe('a', 'all expected whitespace chars are trimmed');
     var zeroWidth = '\u200b';
     expect(trim(zeroWidth)).toBe(zeroWidth, 'zero width space does not trim');
+  });
+
+  it('should return a string for everything', function () {
+    var values = [
+      true,
+      'abc',
+      1,
+      function () {},
+      [],
+      /r/
+    ];
+
+    var expected = values.map(String);
+    var actual = values.map(trim);
+    expect(actual).toEqual(expected);
+  });
+
+  it('should throw for Object.create(null)', function () {
+    expect(function () {
+      trim(Object.create(null));
+    }).toThrow();
+  });
+
+  ifSymbolIt('should throw for Symbol', function () {
+    var sym = Symbol('foo');
+    expect(function () {
+      trim(sym);
+    }).toThrow();
+
+    var symObj = Object(sym);
+    expect(function () {
+      trim(Object(symObj));
+    }).toThrow();
   });
 });
