@@ -21,27 +21,16 @@
 <a name="module_trim-x"></a>
 
 ## trim-x
+
 This method removes whitespace from the left and right end of a string.
 
-**Version**: 3.0.0  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
+- [trim-x](#module_trim-x)
+  - [`.trim2016`](#module_trim-x.trim2016) ⇒ <code>string</code>
 
-* [trim-x](#module_trim-x)
-    * [`.trim`](#module_trim-x.trim)
-    * [`.trim2016`](#module_trim-x.trim2016) ⇒ <code>string</code>
-    * [`.trim2018`](#module_trim-x.trim2018) ⇒ <code>string</code>
-
-<a name="module_trim-x.trim"></a>
-
-### `trim-x.trim`
-A reference to trim2018.
-
-**Kind**: static property of [<code>trim-x</code>](#module_trim-x)  
 <a name="module_trim-x.trim2016"></a>
 
 ### `trim-x.trim2016` ⇒ <code>string</code>
+
 This method removes whitespace from the left and right end of a string.
 (ES2016)
 
@@ -51,20 +40,22 @@ This method removes whitespace from the left and right end of a string.
 
 - <code>TypeError</code> If string is null or undefined or not coercible.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                             |
+| ------ | ------------------- | --------------------------------------- |
 | string | <code>string</code> | The string to trim the whitespace from. |
 
-**Example**  
+**Example**
+
 ```js
-var trim = require('trim-x');
+import {trim2016} from 'trim-x';
 
-trim(' \t\na \t\n') === 'a'; // true
+console.log(trim2016(' \t\na \t\n') === 'a'); // true
 ```
-<a name="module_trim-x.trim2018"></a>
 
-### `trim-x.trim2018` ⇒ <code>string</code>
+<a name="module_trim-x"></a>
+
+### `trim-x` ⇒ <code>string</code>
+
 This method removes whitespace from the left and right end of a string.
 (ES2018)
 
@@ -74,14 +65,14 @@ This method removes whitespace from the left and right end of a string.
 
 - <code>TypeError</code> If string is null or undefined or not coercible.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                             |
+| ------ | ------------------- | --------------------------------------- |
 | string | <code>string</code> | The string to trim the whitespace from. |
 
-**Example**  
-```js
-var trim = require('trim-x');
+**Example**
 
-trim(' \t\na \t\n') === 'a'; // true
+```js
+import trim from 'trim-x';
+
+console.log(trim(' \t\na \t\n') === 'a'); // true
 ```

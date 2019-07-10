@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`trim trim should throw for Object.create(null) 1`] = `"Cannot convert object to primitive value"`;
+
+exports[`trim trim should throw for Symbol 1`] = `"Cannot convert a Symbol value to a string"`;
+
+exports[`trim trim should throw for Symbol 2`] = `"Cannot convert a Symbol value to a string"`;
+
+exports[`trim trim should throw when target is null or undefined 1`] = `"Cannot call method on undefined"`;
+
+exports[`trim trim should throw when target is null or undefined 2`] = `"Cannot call method on undefined"`;
+
+exports[`trim trim should throw when target is null or undefined 3`] = `"Cannot call method on null"`;
+
+exports[`trim trim2016 should throw for Object.create(null) 1`] = `"Cannot convert object to primitive value"`;
+
+exports[`trim trim2016 should throw for Symbol 1`] = `"Cannot convert a Symbol value to a string"`;
+
+exports[`trim trim2016 should throw for Symbol 2`] = `"Cannot convert a Symbol value to a string"`;
+
+exports[`trim trim2016 should throw when target is null or undefined 1`] = `"Cannot call method on undefined"`;
+
+exports[`trim trim2016 should throw when target is null or undefined 2`] = `"Cannot call method on undefined"`;
+
+exports[`trim trim2016 should throw when target is null or undefined 3`] = `"Cannot call method on null"`;
