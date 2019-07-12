@@ -1,6 +1,5 @@
-import trimLeft, {trimLeft2016} from 'trim-left-x';
-import trimRight, {trimRight2016} from 'trim-right-x';
-
+import trimLeft, { trimLeft2016 } from 'trim-left-x';
+import trimRight, { trimRight2016 } from 'trim-right-x';
 /**
  * This method removes whitespace from the left and right end of a string.
  * (ES2016).
@@ -9,10 +8,10 @@ import trimRight, {trimRight2016} from 'trim-right-x';
  * @throws {TypeError} If string is null or undefined or not coercible.
  * @returns {string} The trimmed string.
  */
+
 export function trim2016(string) {
   return trimLeft2016(trimRight2016(string));
 }
-
 /**
  * This method removes whitespace from the left and right end of a string.
  * (ES2018).
@@ -21,6 +20,9 @@ export function trim2016(string) {
  * @throws {TypeError} If string is null or undefined or not coercible.
  * @returns {string} The trimmed string.
  */
+
 export default function trim2018(string) {
   return trimLeft(trimRight(string));
 }
+
+//# sourceMappingURL=trim-x.esm.js.map
