@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-15T12:24:00.566Z",
+  "date": "2019-07-16T10:17:20.647Z",
   "describe": "",
   "description": "This method removes whitespace from the left and right end of a string.",
   "file": "trim-x.js",
-  "hash": "cec978494873b9a458bd",
+  "hash": "69d1270887bcbaab1bfe",
   "license": "MIT",
-  "version": "4.0.6"
+  "version": "4.0.7"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -268,7 +268,7 @@ module.exports = function hasSymbols() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/trim-left-x/node_modules/is-nil-x/dist/is-nil-x.esm.js
+// CONCATENATED MODULE: ./node_modules/is-nil-x/dist/is-nil-x.esm.js
 /**
  * Checks if `value` is `null` or `undefined`.
  *
@@ -281,7 +281,7 @@ function isNil(value) {
 }
 
 
-// CONCATENATED MODULE: ./node_modules/trim-left-x/node_modules/require-object-coercible-x/dist/require-object-coercible-x.esm.js
+// CONCATENATED MODULE: ./node_modules/require-object-coercible-x/dist/require-object-coercible-x.esm.js
 
 /**
  * The abstract operation RequireObjectCoercible throws an error if argument
@@ -305,7 +305,7 @@ function requireObjectCoercible(value) {
 var is_symbol = __webpack_require__(0);
 var is_symbol_default = /*#__PURE__*/__webpack_require__.n(is_symbol);
 
-// CONCATENATED MODULE: ./node_modules/trim-left-x/node_modules/to-string-x/dist/to-string-x.esm.js
+// CONCATENATED MODULE: ./node_modules/to-string-x/dist/to-string-x.esm.js
 
 var ERROR_MESSAGE = 'Cannot convert a Symbol value to a string';
 var castString = ERROR_MESSAGE.constructor;
@@ -326,7 +326,7 @@ function ToString(value) {
 }
 
 
-// CONCATENATED MODULE: ./node_modules/trim-left-x/node_modules/require-coercible-to-string-x/dist/require-coercible-to-string-x.esm.js
+// CONCATENATED MODULE: ./node_modules/require-coercible-to-string-x/dist/require-coercible-to-string-x.esm.js
 
 
 /**
@@ -342,7 +342,7 @@ function requireCoercibleToString(value) {
 }
 
 
-// CONCATENATED MODULE: ./node_modules/trim-left-x/node_modules/white-space-x/dist/white-space-x.esm.js
+// CONCATENATED MODULE: ./node_modules/white-space-x/dist/white-space-x.esm.js
 /**
  * A record of a white space character.
  *
@@ -687,396 +687,13 @@ function trimLeft2018(string) {
 }
 
 
-// CONCATENATED MODULE: ./node_modules/is-nil-x/dist/is-nil-x.esm.js
-/**
- * Checks if `value` is `null` or `undefined`.
- *
- * @param {*} [value] - The value to check.
- * @returns {boolean} Returns `true` if `value` is nullish, else `false`.
- */
-function is_nil_x_esm_isNil(value) {
-  /* eslint-disable-next-line lodash/prefer-is-nil */
-  return value === null || typeof value === 'undefined';
-}
-
-
-// CONCATENATED MODULE: ./node_modules/require-object-coercible-x/dist/require-object-coercible-x.esm.js
-
-/**
- * The abstract operation RequireObjectCoercible throws an error if argument
- * is a value that cannot be converted to an Object using ToObject.
- *
- * @param {*} [value] - The `value` to check.
- * @throws {TypeError} If `value` is a `null` or `undefined`.
- * @returns {string} The `value`.
- */
-
-function require_object_coercible_x_esm_requireObjectCoercible(value) {
-  if (is_nil_x_esm_isNil(value)) {
-    throw new TypeError("Cannot call method on ".concat(value));
-  }
-
-  return value;
-}
-
-
-// CONCATENATED MODULE: ./node_modules/to-string-x/dist/to-string-x.esm.js
-
-var to_string_x_esm_ERROR_MESSAGE = 'Cannot convert a Symbol value to a string';
-var to_string_x_esm_castString = to_string_x_esm_ERROR_MESSAGE.constructor;
-/**
- * The abstract operation ToString converts argument to a value of type String.
- *
- * @param {*} [value] - The value to convert to a string.
- * @throws {TypeError} If `value` is a Symbol.
- * @returns {string} The converted value.
- */
-
-function to_string_x_esm_ToString(value) {
-  if (is_symbol_default()(value)) {
-    throw new TypeError(to_string_x_esm_ERROR_MESSAGE);
-  }
-
-  return to_string_x_esm_castString(value);
-}
-
-
-// CONCATENATED MODULE: ./node_modules/require-coercible-to-string-x/dist/require-coercible-to-string-x.esm.js
-
-
-/**
- * This method requires an argument is corecible then converts using ToString.
- *
- * @param {*} [value] - The value to converted to a string.
- * @throws {TypeError} If value is null or undefined.
- * @returns {string} The value as a string.
- */
-
-function require_coercible_to_string_x_esm_requireCoercibleToString(value) {
-  return to_string_x_esm_ToString(require_object_coercible_x_esm_requireObjectCoercible(value));
-}
-
-
-// CONCATENATED MODULE: ./node_modules/white-space-x/dist/white-space-x.esm.js
-/**
- * A record of a white space character.
- *
- * @typedef {object} CharRecord
- * @property {number} code - The character code.
- * @property {string} description - A description of the character.
- * @property {boolean} es5 - Whether the spec lists this as a white space.
- * @property {boolean} es2015 - Whether the spec lists this as a white space.
- * @property {boolean} es2016 - Whether the spec lists this as a white space.
- * @property {boolean} es2017 - Whether the spec lists this as a white space.
- * @property {boolean} es2018 - Whether the spec lists this as a white space.
- * @property {string} string - The character string.
- */
-
-/**
- * An array of the whitespace char codes, string, descriptions and language
- * presence in the specifications.
- *
- * @type Array.<CharRecord>
- */
-var white_space_x_esm_list = [{
-  code: 0x0009,
-  description: 'Tab',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\t"
-}, {
-  code: 0x000a,
-  description: 'Line Feed',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\n"
-}, {
-  code: 0x000b,
-  description: 'Vertical Tab',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\x0B"
-}, {
-  code: 0x000c,
-  description: 'Form Feed',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\f"
-}, {
-  code: 0x000d,
-  description: 'Carriage Return',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\r"
-}, {
-  code: 0x0020,
-  description: 'Space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: " "
-},
-/*
-{
-  code: 0x0085,
-  description: 'Next line',
-  es5: false,
-  es2015: false,
-  es2016: false,
-  es2017: false,
-  es2018: false,
-  string: '\u0085'
-}
-*/
-{
-  code: 0x00a0,
-  description: 'No-break space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\xA0"
-}, {
-  code: 0x1680,
-  description: 'Ogham space mark',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u1680"
-}, {
-  code: 0x180e,
-  description: 'Mongolian vowel separator',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: false,
-  es2018: false,
-  string: "\u180E"
-}, {
-  code: 0x2000,
-  description: 'En quad',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2000"
-}, {
-  code: 0x2001,
-  description: 'Em quad',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2001"
-}, {
-  code: 0x2002,
-  description: 'En space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2002"
-}, {
-  code: 0x2003,
-  description: 'Em space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2003"
-}, {
-  code: 0x2004,
-  description: 'Three-per-em space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2004"
-}, {
-  code: 0x2005,
-  description: 'Four-per-em space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2005"
-}, {
-  code: 0x2006,
-  description: 'Six-per-em space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2006"
-}, {
-  code: 0x2007,
-  description: 'Figure space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2007"
-}, {
-  code: 0x2008,
-  description: 'Punctuation space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2008"
-}, {
-  code: 0x2009,
-  description: 'Thin space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2009"
-}, {
-  code: 0x200a,
-  description: 'Hair space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u200A"
-},
-/*
-{
-  code: 0x200b,
-  description: 'Zero width space',
-  es5: false,
-  es2015: false,
-  es2016: false,
-  es2017: false,
-  es2018: false,
-  string: '\u200b'
-},
-*/
-{
-  code: 0x2028,
-  description: 'Line separator',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2028"
-}, {
-  code: 0x2029,
-  description: 'Paragraph separator',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u2029"
-}, {
-  code: 0x202f,
-  description: 'Narrow no-break space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u202F"
-}, {
-  code: 0x205f,
-  description: 'Medium mathematical space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u205F"
-}, {
-  code: 0x3000,
-  description: 'Ideographic space',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\u3000"
-}, {
-  code: 0xfeff,
-  description: 'Byte Order Mark',
-  es5: true,
-  es2015: true,
-  es2016: true,
-  es2017: true,
-  es2018: true,
-  string: "\uFEFF"
-}];
-/**
- * A string of the ES5 to ES2016 whitespace characters.
- *
- * @type string
- */
-
-var white_space_x_esm_stringES2016 = '';
-/**
- * A string of the ES2017 to ES2018 whitespace characters.
- *
- * @type string
- */
-
-var white_space_x_esm_stringES2018 = '';
-var dist_white_space_x_esm_length = white_space_x_esm_list.length;
-
-for (var white_space_x_esm_i = 0; white_space_x_esm_i < dist_white_space_x_esm_length; white_space_x_esm_i += 1) {
-  if (white_space_x_esm_list[white_space_x_esm_i].es2016) {
-    white_space_x_esm_stringES2016 += white_space_x_esm_list[white_space_x_esm_i].string;
-  }
-
-  if (white_space_x_esm_list[white_space_x_esm_i].es2018) {
-    white_space_x_esm_stringES2018 += white_space_x_esm_list[white_space_x_esm_i].string;
-  }
-}
-
-var white_space_x_esm_string2018 = white_space_x_esm_stringES2018;
-/* harmony default export */ var dist_white_space_x_esm = (white_space_x_esm_string2018);
-var white_space_x_esm_string2016 = white_space_x_esm_stringES2016;
-
-
 // CONCATENATED MODULE: ./node_modules/trim-right-x/dist/trim-right-x.esm.js
 
 
 var trim_right_x_esm_EMPTY_STRING = '';
 var trim_right_x_esm_RegExpCtr = /none/.constructor;
-var reRight2016 = new trim_right_x_esm_RegExpCtr("[".concat(white_space_x_esm_string2016, "]+$"));
-var reRight2018 = new trim_right_x_esm_RegExpCtr("[".concat(dist_white_space_x_esm, "]+$"));
+var reRight2016 = new trim_right_x_esm_RegExpCtr("[".concat(string2016, "]+$"));
+var reRight2018 = new trim_right_x_esm_RegExpCtr("[".concat(white_space_x_esm, "]+$"));
 var trim_right_x_esm_replace = trim_right_x_esm_EMPTY_STRING.replace;
 /**
  * This method removes whitespace from the right end of a string. (ES2016).
@@ -1087,7 +704,7 @@ var trim_right_x_esm_replace = trim_right_x_esm_EMPTY_STRING.replace;
  */
 
 function trimRight2016(string) {
-  return trim_right_x_esm_replace.call(require_coercible_to_string_x_esm_requireCoercibleToString(string), reRight2016, trim_right_x_esm_EMPTY_STRING);
+  return trim_right_x_esm_replace.call(requireCoercibleToString(string), reRight2016, trim_right_x_esm_EMPTY_STRING);
 }
 /**
  * This method removes whitespace from the right end of a string. (ES2018).
@@ -1098,7 +715,7 @@ function trimRight2016(string) {
  */
 
 function trimRight2018(string) {
-  return trim_right_x_esm_replace.call(require_coercible_to_string_x_esm_requireCoercibleToString(string), reRight2018, trim_right_x_esm_EMPTY_STRING);
+  return trim_right_x_esm_replace.call(requireCoercibleToString(string), reRight2018, trim_right_x_esm_EMPTY_STRING);
 }
 
 
