@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-16T10:17:20.647Z",
+  "date": "2019-07-16T12:14:07.706Z",
   "describe": "",
   "description": "This method removes whitespace from the left and right end of a string.",
   "file": "trim-x.js",
   "hash": "69d1270887bcbaab1bfe",
   "license": "MIT",
-  "version": "4.0.7"
+  "version": "4.0.8"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
