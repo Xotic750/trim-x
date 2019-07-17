@@ -21,8 +21,10 @@ export function trim2016(string) {
  * @returns {string} The trimmed string.
  */
 
-export default function trim2018(string) {
+var trim2018 = function trim2018(string) {
   return trimLeft(trimRight(string));
-}
+};
+
+export default trim2018;
 
 //# sourceMappingURL=trim-x.esm.js.map
