@@ -22,42 +22,17 @@
 
 ## trim-x
 
-This method removes whitespace from the left and right end of a string.
+This method removes whitespace from the start and end of a string.
 
-- [trim-x](#module_trim-x)
-  - [`.trim2016`](#module_trim-x.trim2016) ⇒ <code>string</code>
+<a name="exp_module_math-trim-x.exports"></a>
 
-<a name="module_trim-x.trim2016"></a>
-
-### `trim-x.trim2016` ⇒ <code>string</code>
-
-This method removes whitespace from the left and right end of a string.
-(ES2016)
-
-**Kind**: static property of [<code>trim-x</code>](#module_trim-x)  
-**Returns**: <code>string</code> - The trimmed string.  
-**Throws**:
-
-- <code>TypeError</code> If string is null or undefined or not coercible.
-
-| Param  | Type                | Description                             |
-| ------ | ------------------- | --------------------------------------- |
-| string | <code>string</code> | The string to trim the whitespace from. |
-
-**Example**
-
-```js
-import {trim2016} from 'trim-x';
-
-console.log(trim2016(' \t\na \t\n') === 'a'); // true
-```
+### `module.exports(string)` ⇒ <code>number</code> ⏏
 
 <a name="module_trim-x"></a>
 
 ### `trim-x` ⇒ <code>string</code>
 
-This method removes whitespace from the left and right end of a string.
-(ES2018)
+This method removes whitespace from the start and end of a string. (ES2019)
 
 **Kind**: static property of [<code>trim-x</code>](#module_trim-x)  
 **Returns**: <code>string</code> - The trimmed string.  

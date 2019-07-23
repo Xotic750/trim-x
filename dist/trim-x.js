@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-22T12:17:56.088Z",
+  "date": "2019-07-23T23:46:20.767Z",
   "describe": "",
   "description": "This method removes whitespace from the left and right end of a string.",
   "file": "trim-x.js",
-  "hash": "bd59cffc133edb64a0d7",
+  "hash": "8f7c89e2ea870add909b",
   "license": "MIT",
-  "version": "4.0.19"
+  "version": "4.0.20"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -668,33 +668,21 @@ var string2016 = stringES2016;
 
 var EMPTY_STRING = '';
 var RegExpCtr = /none/.constructor;
-var reLeft2016 = new RegExpCtr("^[".concat(string2016, "]+"));
 var reLeft = new RegExpCtr("^[".concat(white_space_x_esm, "]+"));
 var replace = EMPTY_STRING.replace;
 /**
- * This method removes whitespace from the left end of a string. (ES2016).
+ * This method removes whitespace from the start of a string. (ES2019).
  *
  * @param {string} [string] - The string to trim the left end whitespace from.
  * @throws {TypeError} If string is null or undefined or not coercible.
  * @returns {string} The left trimmed string.
  */
 
-function trimLeft2016(string) {
-  return replace.call(require_coercible_to_string_x_esm(string), reLeft2016, EMPTY_STRING);
-}
-/**
- * This method removes whitespace from the left end of a string. (ES2018).
- *
- * @param {string} [string] - The string to trim the left end whitespace from.
- * @throws {TypeError} If string is null or undefined or not coercible.
- * @returns {string} The left trimmed string.
- */
-
-var trim_left_x_esm_trimLeft2018 = function trimLeft2018(string) {
+var trim_left_x_esm_trimStart = function trimStart(string) {
   return replace.call(require_coercible_to_string_x_esm(string), reLeft, EMPTY_STRING);
 };
 
-/* harmony default export */ var trim_left_x_esm = (trim_left_x_esm_trimLeft2018);
+/* harmony default export */ var trim_left_x_esm = (trim_left_x_esm_trimStart);
 
 
 // CONCATENATED MODULE: ./node_modules/trim-right-x/dist/trim-right-x.esm.js
@@ -702,65 +690,40 @@ var trim_left_x_esm_trimLeft2018 = function trimLeft2018(string) {
 
 var trim_right_x_esm_EMPTY_STRING = '';
 var trim_right_x_esm_RegExpCtr = /none/.constructor;
-var reRight2016 = new trim_right_x_esm_RegExpCtr("[".concat(string2016, "]+$"));
 var reRight2018 = new trim_right_x_esm_RegExpCtr("[".concat(white_space_x_esm, "]+$"));
 var trim_right_x_esm_replace = trim_right_x_esm_EMPTY_STRING.replace;
 /**
- * This method removes whitespace from the right end of a string. (ES2016).
+ * This method removes whitespace from the end of a string. (ES2019).
  *
  * @param {string} [string] - The string to trim the right end whitespace from.
  * @throws {TypeError} If string is null or undefined or not coercible.
  * @returns {string} The right trimmed string.
  */
 
-function trimRight2016(string) {
-  return trim_right_x_esm_replace.call(require_coercible_to_string_x_esm(string), reRight2016, trim_right_x_esm_EMPTY_STRING);
-}
-/**
- * This method removes whitespace from the right end of a string. (ES2018).
- *
- * @param {string} [string] - The string to trim the right end whitespace from.
- * @throws {TypeError} If string is null or undefined or not coercible.
- * @returns {string} The right trimmed string.
- */
-
-var trim_right_x_esm_trimRight2018 = function trimRight2018(string) {
+var trim_right_x_esm_trimEnd = function trimEnd(string) {
   return trim_right_x_esm_replace.call(require_coercible_to_string_x_esm(string), reRight2018, trim_right_x_esm_EMPTY_STRING);
 };
 
-/* harmony default export */ var trim_right_x_esm = (trim_right_x_esm_trimRight2018);
+/* harmony default export */ var trim_right_x_esm = (trim_right_x_esm_trimEnd);
 
 
 // CONCATENATED MODULE: ./dist/trim-x.esm.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trim2016", function() { return trim2016; });
 
 
 /**
- * This method removes whitespace from the left and right end of a string.
- * (ES2016).
+ * This method removes whitespace from the start and end of a string.
+ * (ES2019).
  *
  * @param {string} [string] - The string to trim the whitespace from.
  * @throws {TypeError} If string is null or undefined or not coercible.
  * @returns {string} The trimmed string.
  */
 
-function trim2016(string) {
-  return trimLeft2016(trimRight2016(string));
-}
-/**
- * This method removes whitespace from the left and right end of a string.
- * (ES2018).
- *
- * @param {string} [string] - The string to trim the whitespace from.
- * @throws {TypeError} If string is null or undefined or not coercible.
- * @returns {string} The trimmed string.
- */
-
-var trim_x_esm_trim2018 = function trim2018(string) {
+var trim_x_esm_trim = function trim(string) {
   return trim_left_x_esm(trim_right_x_esm(string));
 };
 
-/* harmony default export */ var trim_x_esm = __webpack_exports__["default"] = (trim_x_esm_trim2018);
+/* harmony default export */ var trim_x_esm = __webpack_exports__["default"] = (trim_x_esm_trim);
 
 
 
